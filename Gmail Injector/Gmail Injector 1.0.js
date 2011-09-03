@@ -33,19 +33,19 @@
     /**
      * Index discovery.
      *
-     * Code container array: GLOBALS[17][18]
-     * HTML: GLOBALS[17][18][2]
-     * JavaScript: GLOBALS[17][18][3]
-     * CSS: GLOBALS[17][18][4]
+     * Code container array: window.GLOBALS[17][18]
+     * HTML: window.GLOBALS[17][18][2]
+     * JavaScript: window.GLOBALS[17][18][3]
+     * CSS: window.GLOBALS[17][18][4]
      */
 //    topWindow.addEventListener("DOMContentLoaded", function ()
 //    {
 //        var string = "";
 //
 //        var i = null;
-//        for (i = 0; i < GLOBALS[17][18]; i += 1)
+//        for (i = 0; i < window.GLOBALS[17][18]; i += 1)
 //        {
-//            string += i + ": " + GLOBALS[17][18][i] + "\n";
+//            string += i + ": " + window.GLOBALS[17][18][i] + "\n";
 //        }
 //
 //        alert(string);
@@ -209,12 +209,12 @@
 
     var modifyCodeArray = function ()
     {
-        if (!Array.isArray(GLOBALS))
+        if (!Array.isArray(window.GLOBALS))
         {
             return;
         }
 
-        codeArray = GLOBALS[17][18];
+        codeArray = window.GLOBALS[17][18];
 
         handleException(modifyHtml);
         handleException(modifyJs);
