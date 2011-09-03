@@ -56,7 +56,7 @@
     var injectCss = function ()
     {
         /* Changes */
-        var overlappingContentFix = "#content{z-index: -2 !important;}"; // Fix the content webpage overlapping the floating navigation bar.
+        var overlappingContentFix = "#content{z-index: 0 !important;}"; // Fix the content webpage overlapping the floating navigation bar.
 
         var content = topWindowDocument.getElementById("content");
         var searchNavigationBar = content.previousSibling.previousSibling;
@@ -72,12 +72,12 @@
 
         if (searchNavigationBar.hasAttribute("class"))
         {
-            overlappingSearchNavigationBarFix = returnClassSelector(searchNavigationBar.getAttribute("class")) + "{z-index: -1 !important;}"; // Fix the search navigation bar overlapping the top navigation bar dropdowns.
+            overlappingSearchNavigationBarFix = returnClassSelector(searchNavigationBar.getAttribute("class")) + "{z-index: 1 !important;}"; // Fix the search navigation bar overlapping the top navigation bar dropdowns.
         }
 
         if (topNavigationBar.hasAttribute("class"))
         {
-            overlappingTopNavigationBarFix = returnClassSelector(topNavigationBar.getAttribute("class")) + "{z-index: 0 !important;}"; // Correct the order of the z-index.
+            overlappingTopNavigationBarFix = returnClassSelector(topNavigationBar.getAttribute("class")) + "{z-index: 2 !important;}"; // Correct the order of the z-index.
         }
 
         var css = (overlappingContentFix + (typeof overlappingSearchNavigationBarFix === "string" ? overlappingSearchNavigationBarFix : "") + (typeof overlappingTopNavigationBarFix === "string" ? overlappingTopNavigationBarFix : ""));
