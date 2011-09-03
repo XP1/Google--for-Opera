@@ -27,6 +27,21 @@
             throw ("userAgent is not a string.");
         }
     });
+
+    var setupConnection = function ()
+    {
+        var retrieveUserAgent = function (event)
+        {
+            userAgent = event.data;
+            window.opera.postError("Setting userAgent: " + userAgent);
+
+            opera.extension.removeEventListener("message", retrieveUserAgent, false);
+        };
+
+        opera.extension.addEventListener("message", retrieveUserAgent, false);
+    };
+
+    window.addEventListener("DOMContentLoaded", setupConnection, false);
 }());
 
 (function (topWindow)

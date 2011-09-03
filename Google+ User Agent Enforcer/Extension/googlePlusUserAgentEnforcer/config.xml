@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="https://github.com/XP1/Google--for-Opera/" version="1.0">
+<widget xmlns="http://www.w3.org/ns/widgets" id="https://github.com/XP1/Google--for-Opera/" version="1.01">
     <name short="G+ UA Enforcer" dir="ltr" xml:lang="en">Google+ User Agent Enforcer</name>
     <description dir="ltr" xml:lang="en">Forces the Opera user agent so that Google+'s JavaScript will properly detect Opera, even when spoofing the &quot;User-Agent&quot; HTTP header.
         Setup:
         https://plus.google.com/ &gt; Right click &gt; Edit Site Preferences... &gt; Network &gt; Browser identification: Identify as Firefox &gt; OK.
     </description>
     <author href="https://github.com/XP1/Google--for-Opera/">XP1</author>
-    <icon src="icons/googlePlus_64x64.png"/>
+    <icon src="images/icons/googlePlus_64x64.png"/>
     <access origin="http://google.com/" subdomains="true"/>
     <access origin="https://google.com/" subdomains="true"/>
     <access origin="http://gstatic.com/" subdomains="true"/>
