@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" id="https://github.com/XP1/Google--for-Opera/" version="1.04">
+<widget xmlns="http://www.w3.org/ns/widgets" id="https://github.com/XP1/Google--for-Opera/" version="1.05">
     <name short="G+ Injector" dir="ltr" xml:lang="en">Google+ Injector</name>
     <description dir="ltr" xml:lang="en">Injects the missing CSS, HTML, and JavaScript code into Google+, which will show the web toolbar buttons and may, by the addition of more JavaScript, increase usability or the number of features.</description>
     <author href="https://github.com/XP1/Google--for-Opera/">XP1</author>
